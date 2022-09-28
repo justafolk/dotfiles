@@ -1,0 +1,98 @@
+* {
+    font-family: CaskaydiaCove Nerd Font;
+    font-size: 10pt;
+    border: none;
+    font-weight: 400;
+    padding: 1 1px;
+}
+
+window#waybar {
+    background-color: #001e27;
+    opacity: 0.8;
+    color: #839496;
+    padding-right: 5px;
+}
+
+#workspaces button {
+    background-color: transparent;
+    border-radius: 2px;
+    color: #839496;
+    margin: 2px 2px;
+}
+
+#workspaces button:hover {
+    color: #cb4b16;
+    background-color: #001e27;
+}
+
+#workspaces button.focused {
+    color: #b58900;
+    background-color: #001e27;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+#mode {
+    background-color: #888888;
+}
+#language,
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#mpd {
+    padding: 0 4px;
+    color: #b58900;
+    background-color: #001e27;
+    border-radius: 2px;
+    margin: 2px 2px;
+}
+
+#window {
+    color: #859900;
+    font-weight: 800;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+@keyframes blink {
+    to {
+        background-color: #888888;
+        color: #000000;
+    }
+}
+
+#battery.critical:not(.charging) {
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#language {
+    padding: 0 4px;
+    min-width: 16px;
+}
+
