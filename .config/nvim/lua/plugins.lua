@@ -14,10 +14,7 @@ packer.startup(function(use)
   use 'sbdchd/neoformat'
   use 'wbthomason/packer.nvim'
   use 'christoomey/vim-system-copy'
-  use {
-    'svrana/neosolarized.nvim',
-    requires = { 'tjdevries/colorbuddy.nvim' }
-  }
+ use 'ellisonleao/gruvbox.nvim'
   use 'nvim-lualine/lualine.nvim' -- Statusline
   use 'nvim-lua/plenary.nvim' -- Common utilities
   use 'onsails/lspkind-nvim' -- vscode-like pictograms

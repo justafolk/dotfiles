@@ -1,7 +1,7 @@
 @theme "/dev/null"
 
 * {
-	bg: #181E27;
+	bg: #141414;
 	background-color: @bg;
 }
 
@@ -11,14 +11,16 @@ configuration {
 		icon-theme: "Papirus";
 	location: 0;
 	font: "JetBrainsMono Nerd Font 12";	
-	display-drun: "Launch:";
+	display-drun: "";
 }
 
 window { 
-	width: 35%;
+  border-radius:12px;
+	width: 40%;
 	transparency: "real";
 	orientation: vertical;
-	border-color: #74adc0;
+  border-width: 10px;
+	border-color: #fff;
 }
 
 mainbox {
@@ -35,7 +37,8 @@ element {
 }
 
 element selected {
-	background-color: #74adc0;
+	background-color: #928374;
+  border-radius: 5px;
 }
 
 element-text {
@@ -69,14 +72,8 @@ entry {
 	margin: 0 -2 0 0;
 }
 
-inputbar {
-	background-image: url("~/Downloads/wall.png", width);
-	padding: 180 0 0;
-	margin: 0 0 0 0;
-} 
-
 prompt {
-	text-color: #aaffaa;
+	text-color: #a89984;
 	padding: 10 6 0 10;
 	margin: 0 -2 0 0;
 }

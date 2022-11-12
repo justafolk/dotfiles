@@ -5,6 +5,8 @@ end
 set -x PATH $PATH $HOME/.local/share/gem/ruby/3.0.0/bin
 
 alias l="ptls";
+alias vim="nvim";
+alias vi="nvim";
 alias ll="ptls -Al";
 alias php="php7"
 
@@ -12,4 +14,4 @@ alias php="php7"
 # Replace ls with exa
 alias ls='l'
 alias la='ll'
-
+alias g="git"
